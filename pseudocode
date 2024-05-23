@@ -1,8 +1,3 @@
-Please paste this on the GitHub 
-Repo: https://github.com/hipeeps1104/dronetics
-Read me: Add the Description relevant to the technical implementation from the founding story 
-Pseudo Code for the ML Model Development: 
-
 # Define the main components of the ML pipeline
 function main_pipeline(raw_data):
     preprocessed_data = preprocess_data(raw_data)
