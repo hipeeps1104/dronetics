@@ -8,18 +8,10 @@ Software Architecture Components:
 
 AI Model Implementation
 
-Step 1: 
-Define the data pipeline process. The data pipelining process will involve warehousing preprocessed data which will subsequently be cleaned. Then aggregate the normalized data and create a new data directory for feature engineering. 
+1. Data Collection and Processing: Define the data pipeline process. Data pipelining process will involve warehousing preprocessed data which will be cleaned. Scale to a standard range to help improve the performance of the algorithm. Use statistical methods to fill missing data values in order to reduce bias in data set. Aggregate the normalized data and create a new data directory for feature engineering.
+2. Feature Engineering: Extract the specific features that will be used in the machine learning model from the preprocessed data. Generate domain-specific features to help reduce feature mismatch between the source and target domains. Combine all the features into one data set. Extract the labels from the preprocessed data.
+3. Model Training. Split the data into a training set and a validation set. Generate a set of models such as: Random Forest, Gradient Boosting, Neural Network. Train the models with the training set. Add all the trained models into a data set.
+4. Model Validation. For every model in the set of trained models, return a validation score. If the validation score is better than the current best validation score, then update score and model. Return best model.
+5. Model Depolyment. Deploy model to cloud for scalability. Expose model as an API. 
 
-Step 2: 
-Extract the specific features that will be used in the machine learning model from the preprocessed data. Generate additional features based on domain. Combine all the features into one variable. Extract the labels from the preprocessed data. 
-
-Step 3: 
-Split the data into a training set and a validation set. Generate a set of models. Add all the trained models into an array. 
-
-Step 4:
-For every model in the set of trained models, return a validation score. If the validation score is better than the current best validation score, then update score and model. Return best model. 
-
-Step 5: 
-Deploy model to cloud for scalability. Expose model as an API. 
 
